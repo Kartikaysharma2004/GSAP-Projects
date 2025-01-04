@@ -1,13 +1,15 @@
 # GSAP Project 2
 A modern financial services website built using Tailwind CSS and enhanced with GSAP animations. This project showcases responsive design, interactive elements, and dynamic animations to create an engaging user experience while replicating a professional and polished UI.
 
+![Capture](https://github.com/user-attachments/assets/49512a50-9f58-4b1b-b9ca-e464605e7f4b)
+
 
 <div align="center">
 <h3>GSAP Project built with Tailwind CSS & GSAP</h5>
 </div>
 
 <p align="center">
-  <a href="https://fbloginn.netlify.app/">
+  <a href="https://gsaproject2.netlify.app/">
     <img src="https://img.shields.io/static/v1?label=&message=View%20Demo&style=for-the-badge&color=black&logo=vercel" />
   </a>
 </p>
