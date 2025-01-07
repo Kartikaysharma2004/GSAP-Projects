@@ -1,6 +1,8 @@
 # GSAP Project 3
 An innovative real estate website designed with Tailwind CSS and powered by GSAP animations. This project emphasizes smooth transitions, dynamic scrolling effects, and an intuitive user interface. It highlights modern web development practices while creating a visually appealing experience tailored to the real estate industry.
 
+![pr3](https://github.com/user-attachments/assets/d3c3f009-2480-4d9d-99c8-e93a4c4931df)
+
 <div align="center">
 <h3>GSAP Project built with Tailwind CSS & GSAP</h5>
 </div>
