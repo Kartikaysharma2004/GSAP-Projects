@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.19/dist/lenis.css">
     <title>GSAP Project 2 | Kartikay Sharma</title>
-  <link rel="stylesheet" crossorigin href="/assets/index-DqeWQAJf.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-DX2qSapw.css">
 </head>
+
 
 <body class="bg-[#FFFFF5] relative h-screen overflow-x-hidden">
     <div
@@ -16,8 +19,10 @@
     <div class="flex justify-around px-4 py-5 max-sm:px-0 max-sm:py-3" id="home">
         <div class="flex gap-4">
             <img loading="lazy" class="logo z-10 h-10 border border-black" src="/assets/logo-xu3ENBng.png" alt="Logo">
+            <a href="index.html">
             <h1 class="title z-10 uppercase font-semibold mt-1 max-sm:text-xs max-sm:mt-3 text-[#21212B]">Invest group
             </h1>
+        </a>
         </div>
         <ul class="flex gap-6 font-thin mt-1 max-md:hidden">
             <li class="cursor-pointer hover:text-yellow-700 hover:transition">Shares</li>
@@ -60,43 +65,73 @@
     <hr class="border-black">
 
     <div class="flex flex-wrap justify-around py-10 relative gap-10 max-sm:px-2 max-sm:py-5">
-        <div class="cards bg-[#21242D] w-96 h-64 text-white text-4xl max-sm:text-2xl p-10 shadow-xl">
-            <h1>$52, 311, 013</h1>
-            <p class="text-lg max-sm:text-sm mt-3">$1,752, 39 (142%)</p>
-            <div class="text-lg mt-16 flex justify-between">
-                <div>
-                    <button class="buycardbtns">Sell</button>
-                    <button class="sellcardbtns">Buy</button>
+        <!-- Card 1 -->
+        <div class="cards w-96 h-64 text-white bg-[#21242D] text-4xl max-sm:text-2xl shadow-xl relative overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="/assets/Trading%20Graph-DcN2u3CB.png" alt="Graph" class="h-full w-full object-cover opacity-50">
+            </div>
+            <!-- Content -->
+            <div class="relative z-10 p-10">
+                <h1>$52, 311, 013</h1>
+                <p class="text-lg max-sm:text-sm mt-3">$1,752, 39 (142%)</p>
+                <div class="text-lg mt-16 flex justify-between">
+                    <div>
+                        <button class="buycardbtns">Sell</button>
+                        <button class="sellcardbtns">Buy</button>
+                    </div>
+                    <button class="text-sm border-2 border-white bg-white text-black w-12 p-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
                 </div>
-                <button class="text-sm border-2 border-white bg-white text-black w-12 p-2"><i
-                        class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
         </div>
-        <div class="cards bg-[#21242D] w-96 h-64 text-white text-4xl max-sm:text-2xl p-10 shadow-xl">
-            <h1>$24, 245, 013</h1>
-            <p class="text-lg max-sm:text-sm mt-3">$752, 39 (42%)</p>
-            <div class="text-lg mt-16 flex justify-between">
-                <div>
-                    <button class="buycardbtns">Sell</button>
-                    <button class="sellcardbtns">Buy</button>
+    
+        <!-- Card 2 -->
+        <div class="cards w-96 h-64 text-white bg-[#21242D] text-4xl max-sm:text-2xl shadow-xl relative overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="/assets/Trading%20Graph-DcN2u3CB.png" alt="Graph" class="h-full w-full object-cover opacity-50">
+            </div>
+            <!-- Content -->
+            <div class="relative z-10 p-10">
+                <h1>$24, 245, 013</h1>
+                <p class="text-lg max-sm:text-sm mt-3">$752, 39 (42%)</p>
+                <div class="text-lg mt-16 flex justify-between">
+                    <div>
+                        <button class="buycardbtns">Sell</button>
+                        <button class="sellcardbtns">Buy</button>
+                    </div>
+                    <button class="text-sm border-2 border-white bg-white text-black w-12 p-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
                 </div>
-                <button class="text-sm border-2 border-white bg-white text-black w-12 p-2"><i
-                        class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
         </div>
-        <div class="cards bg-[#21242D] w-96 h-64 text-white text-4xl max-sm:text-2xl p-10 shadow-xl">
-            <h1>$100, 201, 013</h1>
-            <p class="text-lg max-sm:text-sm mt-3">$3,952, 39 (142%)</p>
-            <div class="text-lg mt-16 flex justify-between">
-                <div>
-                    <button class="buycardbtns">Sell</button>
-                    <button class="sellcardbtns">Buy</button>
+    
+        <!-- Card 3 -->
+        <div class="cards w-96 h-64 text-white bg-[#21242D] text-4xl max-sm:text-2xl shadow-xl relative overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="/assets/Trading%20Graph-DcN2u3CB.png" alt="Graph" class="h-full w-full object-cover opacity-50">
+            </div>
+            <!-- Content -->
+            <div class="relative z-10 p-10">
+                <h1>$100, 201, 013</h1>
+                <p class="text-lg max-sm:text-sm mt-3">$3,952, 39 (142%)</p>
+                <div class="text-lg mt-16 flex justify-between">
+                    <div>
+                        <button class="buycardbtns">Sell</button>
+                        <button class="sellcardbtns">Buy</button>
+                    </div>
+                    <button class="text-sm border-2 border-white bg-white text-black w-12 p-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
                 </div>
-                <button class="text-sm border-2 border-white bg-white text-black w-12 p-2"><i
-                        class="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
         </div>
     </div>
+    
 
     <hr class="border-black">
 
@@ -141,6 +176,7 @@
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/cfcf372f7f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script> 
     <script src="script.js"></script>
 </body>
 
