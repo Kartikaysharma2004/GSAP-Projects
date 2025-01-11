@@ -3,6 +3,17 @@ gsap.registerPlugin(TextPlugin)
 var section = document.querySelector("body");
 var list = document.querySelector("ul")
 
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 section.addEventListener("mousemove", function (e) {
     gsap.to(".cursor", {
 
@@ -37,7 +48,7 @@ function wheelanimation() {
     window.addEventListener("wheel", function (e) {
         gsap.to(".marque", {
             transform: e.deltaY > 0 ? "translateX(-200%)" : "translateX(100%)", // Ternary operator for condition
-            duration: 4,
+            duration: 5,
             repeat: -1, // Infinite repeat
             ease: "none",
         })
@@ -55,7 +66,7 @@ if (isMobile()) {
     document.querySelector(".h2").textContent = "The Unsocial Network";
     document.querySelector(".pg").textContent =
         "Smartphones and especially social media apps are so addictive, learn to take control of your behavior.";
-        alert("This website is optimized for desktop or laptop use. Some features may not work correctly on mobile devices.")
+    alert("This website is optimized for desktop or laptop use. Some features may not work correctly on mobile devices.")
 }
 
 if (window.innerWidth > 768) {
@@ -65,17 +76,12 @@ if (window.innerWidth > 768) {
         x: -20,
         duration: 0.8,
     })
-        .from("li", {
-            opacity: 0,
-            y: -15,
-            duration: 0.8,
-            ease: "slow(0.7,0.7,false)",
-            stagger: 0.15,
-        })
-    tl.from(".navbtn", {
-        visibility: "hidden",
-        rotate: 360,
-        duration: 2,
+    gsap.from("li", {
+        opacity: 0,
+        y: -15,
+        duration: 0.8,
+        ease: "slow(0.7,0.7,false)",
+        stagger: 0.15,
     })
     tl.to(".h2", {
         opacity: 1,
