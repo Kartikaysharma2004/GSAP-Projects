@@ -4,6 +4,17 @@ gsap.registerPlugin(TextPlugin)
 var section = document.querySelector("body");
 var list = document.querySelector("ul")
 
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 section.addEventListener("mousemove", function (e) {
     gsap.to(".cursor", {
 
@@ -44,19 +55,20 @@ tl.from(".logo", {
         x: -20,
         duration: 0.8,
     })
-    .from("li", {
-        opacity: 0,
-        y: -15,
-        duration: 0.8,
-        ease: "slow(0.7,0.7,false)",
-        stagger: 0.15,
-    })
-tl.from(".navbtn", {
+gsap.from("li", {
+    opacity: 0,
+    y: -15,
+    duration: 0.8,
+    ease: "slow(0.7,0.7,false)",
+    stagger: 0.15,
+})
+gsap.from(".navbtn", {
     visibility: "hidden",
     rotate: 360,
     duration: 2,
+    scrub: true
 })
-tl.to(".h2", {
+gsap.to(".h2", {
     opacity: 1,
     duration: 5,
     ease: "none",
@@ -68,12 +80,12 @@ tl.to(".pg", {
     ease: "none",
     text: "Determine your level of risk and desired level of income per year, and we will create a briefcase individually for you."
 })
-tl.from(".btndiv", {
-    opacity: 0,
-    y: -20,
-    duration: 0.8,
-})
-tl.from(".mainimg", {
+    .from(".btndiv", {
+        opacity: 0,
+        y: -20,
+        duration: 0.8,
+    })
+gsap.from(".mainimg", {
     opacity: 0,
     duration: 1, // Faster entry for the team section
     x: "-50%",
