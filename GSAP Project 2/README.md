@@ -1,11 +1,11 @@
 # GSAP Project 2
-A modern financial services website built using Tailwind CSS and enhanced with GSAP animations. This project showcases responsive design, interactive elements, and dynamic animations to create an engaging user experience while replicating a professional and polished UI.
+A modern financial services website built using Tailwind CSS and enhanced with GSAP and Lenis. This project showcases responsive design, interactive elements, dynamic animations and smooth scrolling to create an engaging user experience while replicating a professional and polished UI.
 
 ![Capture](https://github.com/user-attachments/assets/49512a50-9f58-4b1b-b9ca-e464605e7f4b)
 
 
 <div align="center">
-<h3>GSAP Project built with Tailwind CSS & GSAP</h5>
+<h3>GSAP Project built with Tailwind CSS & GSAP & Lenis</h5>
 </div>
 
 <p align="center">
@@ -17,6 +17,7 @@ A modern financial services website built using Tailwind CSS and enhanced with G
 
 ## Tech Stack 🛠️
 <a href="https://html.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" /> </a> <a href="https://greensock.com/gsap/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/gsap-%2388CE02.svg?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" /> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" /> </a>
+<img src="https://img.shields.io/badge/lenis-%230077B5.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiMwMDFBNUIiIC8+Cjx0ZXh0IHg9IjIwIiB5PSIzNyIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+TGVuaXM8L3RleHQ+Cjwvc3ZnPgo=" alt="Lenis" />
 
 
 ## 🚀 About Me
