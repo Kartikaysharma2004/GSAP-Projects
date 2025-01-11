@@ -2,7 +2,16 @@ var tl = gsap.timeline();
 var section = document.querySelector("body");
 var list = document.querySelector("ul");
 
-console.log("Hello");
+// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 section.addEventListener("mousemove", function (e) {
     gsap.to(".cursor", {
@@ -44,14 +53,14 @@ tl.from(".logo", {
         duration: 0.8, // Reduced duration for quicker transition
         delay: 0.3
     })
-    .from("li", {
+    gsap.from("li", {
         opacity: 0,
         y: -15, // Less vertical movement for smoother stagger
         duration: 1.5,
         stagger: 0.15, // Quicker stagger for list items
         ease: "bounce.out"
     })
-    .from(".navbtn", {
+tl.from(".navbtn", {
         opacity: 0,
         duration: 0.7, // Short duration for nav buttons
         stagger: 0.3 // Smooth staggered appearance
